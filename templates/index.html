@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+{% load static %}
+<html
+  lang="ko"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>4조_삶은당근_프로젝트</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/fonts/boxicons.css'%}" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/css/core.css'%}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{% static 'assets/vendor/css/theme-default.css'%}" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{% static 'assets/css/demo.css'%}" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css'%}" />
+
+    <link rel="stylesheet" href="{% static 'assets/vendor/libs/apex-charts/apex-charts.css'%}" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="{% static 'assets/vendor/js/helpers.js'%}"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="{% static 'assets/js/config.js'%}"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="http://127.0.0.1:8000/main" class="app-brand-link">
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">carrot</span>
+              <span class="app-brand-logo demo">
+                <img src="{% static 'assets/img/mascot/carrot.png'%}" style="width: 15%; height: auto; margin-left : 10px" alt="진격의 당근">
+              </span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item active">
+              <a href="main" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+<!--            <li class="menu-header small text-uppercase">-->
+<!--              <span class="menu-header-text">information</span>-->
+<!--            </li>-->
+<!--            <li class="menu-item">-->
+<!--              <a href="bicycle" class="menu-link">-->
+<!--                <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>-->
+<!--                <div data-i18n="Authentications">실시간 따릉이정보</div>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="menu-item">-->
+<!--              <a href="subway" class="menu-link">-->
+<!--                <i class="menu-icon tf-icons bx bx-cube-alt"></i>-->
+<!--                <div data-i18n="Misc">실시간 열차정보</div>-->
+<!--              </a>-->
+<!--            </li>-->
+            <!-- Extended components -->
+<!--            <li class="menu-item">-->
+<!--              <a href="school" class="menu-link">-->
+<!--                <i class="menu-icon tf-icons bx bx-copy"></i>-->
+<!--                <div data-i18n="Extended UI">초/중/고</div>-->
+<!--              </a>-->
+<!--            </li>-->
+            <div style="margin-top: 150px; margin-left:20px;">
+
+            </div>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="row">
+                <div class="col-lg-8 mb-4 order-0">
+                  <div class="card">
+                    <div class="d-flex align-items-end row">
+                      <div class="col-sm-7">
+                        <div class="card-body" style="padding: 5% 5% 3% 5% !important;">
+                          <h3 class="card-title text-primary" style="margin-bottom: -1rem; font-weight: 700 !important;">위치 기반의 동네 커뮤니티 🎉</h3>
+                          <br>
+                          <h5 class="mb-4" style="margin-bottom:10px !important;">
+                            <h4 class="fw-bold py-3" style="padding-top: 0 !important; padding-bottom: 0;">
+                              이사 오셔서 처음 온 동네, 어디에 뭐가 있는지 알기가 어려우신가요?</h4>
+                          </h5>
+                          <h5 style="margin-top:5px !important; ">
+                            삶은당근 프로젝트는</h5>
+                          <h5>실시간 뉴스, 따릉이, 지하철 정보를 제공하고</h5>
+                          <h5>근처 학교와 상가, 편의시설의 분포를 한 눈에 볼 수 있는 위치 기반 지역 커뮤니티 웹페이지입니다 !!</h5>
+                        </div>
+                      </div>
+                      <div class="col-sm-5 text-center text-sm-left">
+                        <div>
+                          <img src="{% static 'assets/img/mascot/carrot.png'%}"
+                               style="width: 85%; height: auto; margin-right:25%; margin-bottom:8%; margin-top:10%"
+                               align="right" alt="진격의 당근씨 메인">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Total Revenue -->
+                <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                  <div class="card">
+                    <div class="row row-bordered g-0">
+                      <div class="col-md-4">
+                        <div class="card-body">
+                          <iframe src="http://172.30.1.129:31543/goto/7f323e70-b0d3-11ec-a25c-eb03884c4cbb" height="900" width="1050"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Total Revenue -->
+              </div>
+              <div class="row">
+                <!-- Order Statistics -->
+                <div class="col-md-6 col-lg-4 col-xl-4 order-0 mb-4">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between pb-0">
+                      <div class="card-title mb-0">
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="orederStatistics"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orederStatistics">
+                          <a class="dropdown-item" href="javascript:void(0);">Select All</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <iframe src="http://172.30.1.129:31543/goto/6d80a780-b154-11ec-a25c-eb03884c4cbb" height="600" width="1050"></iframe>
+                      <!-- d-flex justify-content-between align-items-center mb-3 이거를 지우면 틀이 깨짐  -->
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex flex-column align-items-center gap-1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Order Statistics -->
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  , made with ❤️ by
+                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">SL아카데미 2번째 프로젝트 4조</a>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+<!--    <div class="buy-now">-->
+<!--      <a-->
+<!--        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"-->
+<!--        target="_blank"-->
+<!--        class="btn btn-danger btn-buy-now"-->
+<!--        >Upgrade to Pro</a-->
+<!--      >-->
+<!--    </div>-->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="{% static 'assets/vendor/libs/jquery/jquery.js'%}"></script>
+    <script src="{% static 'assets/vendor/libs/popper/popper.js'%}"></script>
+    <script src="{% static 'assets/vendor/js/bootstrap.js'%}"></script>
+    <script src="{% static 'assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js'%}"></script>
+
+    <script src="{% static 'assets/vendor/js/menu.js'%}"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="{% static 'assets/vendor/libs/apex-charts/apexcharts.js'%}"></script>
+
+    <!-- Main JS -->
+    <script src="{% static 'assets/js/main.js'%}"></script>
+
+    <!-- Page JS -->
+    <script src="{% static 'assets/js/dashboards-analytics.js'%}"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
